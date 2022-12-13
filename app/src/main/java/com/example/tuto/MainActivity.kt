@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val counterButton : Button = findViewById(R.id.click)
 
         counterButton.setOnClickListener{
-            counter.plus(step)
+            counter = counter.plus(step)
             counterText.text = counter.toString()
         }
 
